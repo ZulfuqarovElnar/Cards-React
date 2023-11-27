@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGear}  from '@fortawesome/free-solid-svg-icons'
+import { faGlobe}  from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   return (
@@ -8,8 +10,13 @@ export default function Navbar() {
       <div className='py-7 text-[#fff]'>
         <h1 className='text-2xl font-bold'>Kart10</h1>
       </div>
-      <div className='py-2 px-3 rounded-full text-[#fff] hover:bg-white hover:text-black transition-colors cursor-pointer'>
-        <FontAwesomeIcon className='text-lg' icon={faGear} />
+      <div className='flex justify-center items-center gap-5 font-medium text-[#fff] text-lg'>
+        <div>
+          <Link to="/about">About Us</Link>
+        </div>
+        <div className='py-2 px-3 rounded-full text-[#fff] hover:bg-white hover:text-black transition-colors cursor-pointer'>
+          <FontAwesomeIcon className='text-xl' icon={faGlobe} />
+        </div>
       </div>
     </div>
   )
