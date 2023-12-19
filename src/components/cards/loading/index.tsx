@@ -6,7 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export default function Loading() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <div className="card w-80 h-40 bg-[#000]">
+            <div className="card w-80 h-40 bg-[#000] border-1 border-black">
                 <div className='flex justify-around items-center pt-5'>
                     <h1 className='text-2xl text-white'>Kart10</h1>
                 <div className='w-10 h-10 rounded-full bg-[#ffc628] rotate-45'>
